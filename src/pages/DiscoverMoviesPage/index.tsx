@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 type SearchState =
   | { status: "idle" }
@@ -50,7 +51,9 @@ export default function DiscoverMoviesPage() {
       ? searchState.data.map((movie) => {
           return (
             <div key={movie.imdbID}>
-              <h1>{movie.Title}</h1>
+              <Link to={`/movies/${movie.imdbID}`}>
+                <h1>{movie.Title}</h1>
+              </Link>
               <img src={movie.Poster} />
             </div>
           );
