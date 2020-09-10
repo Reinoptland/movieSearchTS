@@ -12,5 +12,10 @@
 - Route definen met een route parameter
 - Dynamisch Links genereren waarin de parameter een waarde heeft
 
-- Route voor detail page voor een film -> parameter imdbID
-- Link genereren met imdbID van specifiek films (Discover page)
+- [x] Route voor detail page voor een film -> parameter imdbID
+- [x] Link genereren met imdbID van specifiek films (Discover page)
+
+- [] Haal de imdbID van deze film out de url met de `useParams` hook
+- [] Fetch de details van de juiste film uit api met `useEffect`
+- [] Geef de film weer
+- [] Wel thuis
